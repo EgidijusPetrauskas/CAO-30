@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet">
+    <title>Top 3!</title>
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+<body>
+  <main>
+
+    <!-- Tabs -->
+    <nav class="head">
+      <h1><i>My TOP 3 songs of 2021</i></h1>
+      <button onclick="display('top1', 0)">TOP1</button>
+      <button onclick="display('top2', 1)">TOP2</button>
+      <button onclick="display('top3', 2)">TOP3</button>
+    </nav>
+
+    <!-- Music mute button -->
+    <div class="music-mute">
+      <input type="checkbox" id="mute" onclick="mute()">
+      <label for="mute" id="mute-label" style="background-image: url('unmute.svg')"></label>
+    </div>
+    
+    <!-- Displays -->
+    <section id="top1" class="displayNone">
+      <h2>Damien Rice and Lisa Hannigan - I REMEMBER</h2>
+      <article class="container">
+          <img class="damien-lisa" src="https://s1.dmcdn.net/v/AOjE-1LZvZg1W_VNY/x1080" alt="D&L1">
+          <img class="opacityNone damien-lisa" src="https://lastfm.freetls.fastly.net/i/u/770x0/8adc910133494f3693d8ba408ccba587.jpg">
+          <img class="damien-lisa" src="https://www.independent.ie/entertainment/47721/30859161.ece/AUTOCROP/w620/2014-12-27_ent_5505833_I1.JPG" alt="D&L4">
+          <audio src="remember.mp3"></audio>
+      </article>
+    </section>
+
+    <section id="top2" class="displayNone">
+      <h2>John Mayer - NEON</h2>
+      <article class="container">
+          <img class="neon" src="https://s1.ticketm.net/dam/a/384/2dbd2c80-4042-4429-b5fe-563f7227b384_1477701_TABLET_LANDSCAPE_LARGE_16_9.jpg" alt="">
+          <img class="neon"  src="https://static.toiimg.com/thumb/msid-74971854,imgsize-98792,width-800,height-600,resizemode-75/74971854.jpg" alt="D&L2">
+          <img class="neon" src="https://www.bradleystudycenter.org/wp-content/uploads/2019/08/john-mayer-live-iheartradio-by-Wes-and-Alex-2018-billboard-1548.jpg" alt="D&L4">
+          <audio src="neon.mp3"></audio>
+          </article>
+    </section>
+
+    <section id="top3" class="displayNone">
+      <h2>Kings of Leon - CLOSER</h2>
+      <article class="container">
+          <img class="closer" src="https://i.ytimg.com/vi/5RSqNfkqWBI/maxresdefault.jpg" alt="D&L1">
+          <img class="closer"  src="https://i.ytimg.com/vi/hYECLfqjdnw/maxresdefault.jpg" alt="D&L2">
+          <img class="closer" src="https://img.youtube.com/vi/K-5mcoaPc_U/0.jpg">
+         <audio src="closer.mp3"></audio>
+      </article>
+    </section>
+
+  </main>
+</body>
+</html>
